@@ -1,0 +1,9 @@
+/HW_01/out/
+/HW_01/.idea/
+/.idea/.gitignore
+*.iml
+
+/java_junior.iml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/modules.xml
