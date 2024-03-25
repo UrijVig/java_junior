@@ -3,7 +3,6 @@
 Доделать запускатель тестов:
 
 * Создать аннотации 
-[Test](https://github.com/UrijVig/java_junior/blob/master/HW_02/src/main/java/app/annotation/Test.java), 
 [BeforeEach](https://github.com/UrijVig/java_junior/blob/master/HW_02/src/main/java/app/annotation/BeforeEach.java), 
 [BeforeAll](https://github.com/UrijVig/java_junior/blob/master/HW_02/src/main/java/app/annotation/BeforeAll.java), 
 [AfterEach](https://github.com/UrijVig/java_junior/blob/master/HW_02/src/main/java/app/annotation/AfterEach.java), 
@@ -24,6 +23,8 @@
 
         ***Другими словами: BeforeAll -> BeforeEach -> Test1 -> AfterEach -> BeforeEach -> Test2 -> AfterEach -> AfterAll***
 
-* *Доработать аннотацию Test: добавить параметр int order,
+* *Доработать аннотацию 
+[Test](https://github.com/UrijVig/java_junior/blob/master/HW_02/src/main/java/app/annotation/Test.java)
+: добавить параметр int order,
 по котрому нужно отсортировать тест-методы (от меньшего к большему) и запустить в нужном порядке.
 Значение order по умолчанию - 0
