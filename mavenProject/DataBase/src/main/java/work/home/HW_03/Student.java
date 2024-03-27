@@ -1,43 +1,52 @@
 package work.home.HW_03;
 
+import work.home.HW_03.annotation.Column;
+import work.home.HW_03.annotation.ID;
+import work.home.HW_03.annotation.Table;
+
+@Table(name = "student")
 public class Student {
-    private int id;
-    private String firstName;
-    private String secondName;
+    @ID
+    private int ID;
+    @Column(name = "first_name")
+    private String first_name;
+    @Column(name = "second_name")
+    private String second_name;
+    @Column(name = "age")
     private int age;
 
     public Student() {
     }
 
     public Student(int id, String firstName, String secondName, int age) {
-        this.id = id;
-        this.firstName = firstName;
-        this.secondName = secondName;
+        this.ID = id;
+        this.first_name = firstName;
+        this.second_name = secondName;
         this.age = age;
     }
 
     public int getId() {
-        return id;
+        return ID;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.ID = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirst_name() {
+        return first_name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
     }
 
-    public String getSecondName() {
-        return secondName;
+    public String getSecond_name() {
+        return second_name;
     }
 
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
+    public void setSecond_name(String second_name) {
+        this.second_name = second_name;
     }
 
     public int getAge() {
@@ -51,9 +60,9 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
+                "id=" + ID +
+                ", firstName='" + first_name + '\'' +
+                ", secondName='" + second_name + '\'' +
                 ", age=" + age +
                 '}';
     }
